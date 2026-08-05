@@ -1,0 +1,1 @@
+[tool.poetry] name = "ares-reasoning-engine" version = "1.0.0" description = "An open-source, autonomous reasoning engine" authors = ["Your Name <you@example.com>"]
