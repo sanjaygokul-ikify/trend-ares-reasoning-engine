@@ -13,8 +13,8 @@ class ReasoningEngine:
     def ingest_data(self, input_data: InputData) -> None:
         logger.info(f'Ingesting data: {input_data}')
         # Ingest data into the knowledge graph
-        for data in input_data:
-            self.knowledge_graph.add(data)
+        for data in input_data.data:
+            self.knowledge_graph.add(str(data))
 
     def reason(self) -> Dict[str, str]:
         logger.info('Reasoning engine started')
@@ -69,12 +69,3 @@ class ReasoningEngine:
             return 'Decision made'
         else:
             return 'No decision made'
-
-# Example usage
-knowledge_graph = KnowledgeGraph()
-input_data = InputData([1, 2, 3, 4, 5])
-reasoning_engine = ReasoningEngine(knowledge_graph)
-reasoning_engine.ingest_data(input_data)
-result = reasoning_engine.reason()
-decision = reasoning_engine.make_decision(result)
-logger.info(decision)
