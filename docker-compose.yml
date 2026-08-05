@@ -1,0 +1,1 @@
+version: '3' services: ares: build: . ports: - "8000:8000"
