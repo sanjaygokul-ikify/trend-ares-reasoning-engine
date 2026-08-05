@@ -1,0 +1,1 @@
+# Architecture Overview ARES is designed as a modular, scalable reasoning engine. The architecture consists of the following components: 1) Data Ingestion, 2) Data Processing, 3) Knowledge Graph, 4) Reasoning Engine, and 5) Decision Making.
