@@ -1,0 +1,1 @@
+data_sources: - source1 - source2 reasoning_engine: hybrid
